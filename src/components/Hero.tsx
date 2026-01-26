@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, MessageCircle } from "lucide-react";
+import { ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const WHATSAPP_LINK = "https://wa.me/918919911936";
+import logo from "@/assets/logo.png";
 
 const heroImages = [
   "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=1920&h=1080&fit=crop",
@@ -31,6 +30,13 @@ export function Hero() {
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+  };
+
+  const scrollToProducts = () => {
+    const element = document.getElementById("products");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -88,7 +94,16 @@ export function Hero() {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl animate-fade-in">
+        <div className="max-w-3xl animate-fade-in flex flex-col items-start">
+          {/* Logo */}
+          <div className="mb-8">
+            <img
+              src={logo}
+              alt="The Textile World Logo"
+              className="w-[120px] h-auto rounded-lg border-2 border-accent shadow-lg"
+            />
+          </div>
+          
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Premium Fabrics & Menswear in Hyderabad
           </h1>
@@ -96,19 +111,12 @@ export function Hero() {
             Custom tailoring, premium brands & ready-made styles – all in one place.
           </p>
           <Button
-            asChild
+            onClick={scrollToProducts}
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 py-6"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-xl"
           >
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Order on WhatsApp
-            </a>
+            <ShoppingBag className="w-5 h-5 mr-2" />
+            Order on WhatsApp
           </Button>
         </div>
       </div>

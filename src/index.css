@@ -214,7 +214,7 @@
 } */
 
 
-@keyframes marquee {
+/* @keyframes marquee {
   0% {
     transform: translateX(0%);
   }
@@ -227,6 +227,26 @@
   animation: marquee 30s linear infinite;
 }
 
+.animate-marquee-pause:hover {
+  animation-play-state: paused;
+} */
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Faster speed */
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}
+
+/* Pause on hover (desktop only really) */
 .animate-marquee-pause:hover {
   animation-play-state: paused;
 }

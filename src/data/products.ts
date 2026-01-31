@@ -601,6 +601,7 @@ import raymondSuitingFabric from "@/assets/products/raymond-suiting-fabric-colle
 import ramrajCottonCollarTshirt from "@/assets/products/ramraj-cotton-collar-tshirt.jpg";
 import ramrajCottonPancha9x5 from "@/assets/products/ramraj-cotton-pancha-9x5.jpg";
 
+
 // ================= PRODUCT TYPE =================
 export interface Product {
   id: string;
@@ -662,13 +663,14 @@ export const products: Product[] = [
     description: "Classic white formal shirt by Minister.",
   },
   {
-    id: "5",
-    name: "Ramraj Dhoti & Vest Set",
-    category: "Ramraj Hosiery",
-    price: 1299,
-    image: "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400&h=400&fit=crop",
-    description: "Traditional Ramraj dhoti and vest combo.",
-  },
+  id: "5",
+  name: "Ramraj Cotton Pancha (9 + 5)",
+  category: "Ramraj Hosiery",
+  price: 865,
+  image: ramrajCottonPancha9x5,
+  description:
+    "Premium Ramraj cotton pancha (9 + 5) with traditional gold border. Ideal for daily wear, pooja, and special occasions.",
+},
   {
       id: "6",
       name: "Pure Cotton Shirting Fabric",

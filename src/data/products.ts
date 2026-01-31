@@ -596,6 +596,10 @@ import technoTshirtOR11 from "@/assets/products/technosport-tshirt-or11.jpg";
 
 
 
+import pureCottonShirtingFabric from "@/assets/products/pure-cotton-shirting-fabric.jpg";
+import raymondSuitingFabric from "@/assets/products/raymond-suiting-fabric-collection.jpg";
+import ramrajCottonCollarTshirt from "@/assets/products/ramraj-cotton-collar-tshirt.jpg";
+import ramrajCottonPancha9x5 from "@/assets/products/ramraj-cotton-pancha-9x5.jpg";
 
 // ================= PRODUCT TYPE =================
 export interface Product {
@@ -643,11 +647,11 @@ export const products: Product[] = [
   },
   {
     id: "3",
-    name: "Parx Casual Shirt",
-    category: "Shirts",
-    price: 1499,
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=400&fit=crop",
-    description: "Stylish Parx casual shirt with comfortable fabric.",
+    name: "Raymond Suiting Fabric Collection",
+    category: "Suiting",
+    price: 699,
+    image: raymondSuitingFabric,
+    description: "Raymond premium suiting fabric collection ideal for formal wear.",
   },
   {
     id: "4",
@@ -666,12 +670,12 @@ export const products: Product[] = [
     description: "Traditional Ramraj dhoti and vest combo.",
   },
   {
-    id: "6",
-    name: "Aravind Pure Cotton Shirting Fabric",
-    category: "Shirting",
-    price: 1899,
-    image: "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=400&h=400&fit=crop",
-    description: "Premium Aravind cotton shirting fabric.",
+      id: "6",
+      name: "Pure Cotton Shirting Fabric",
+      category: "Shirting",
+      price: 899,
+      image: pureCottonShirtingFabric,
+      description: "Premium pure cotton shirting fabric with rich colors and smooth finish.",
   },
 
   // ---------- GIFT BOX COMBOS (LOCAL IMAGES) ----------
@@ -962,6 +966,14 @@ export const products: Product[] = [
   price: 479,
   image: technoTshirtOR11,
   description: "TechnoSport Matpiq slim fit polo T-shirt with soft stretch fabric.",
+},
+{
+  id: "48",
+  name: "Ramraj Cotton Collar T-Shirt",
+  category: "T-Shirts",
+  price: 635,
+  image: ramrajCottonCollarTshirt,
+  description: "Ramraj cotton collar t-shirt with comfortable fit and premium fabric.",
 },
 
 

@@ -45,7 +45,7 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
               <Badge variant="secondary" className="w-fit mb-2">
                 {product.category}
               </Badge>
-              <DialogTitle className="text-2xl font-bold">
+              <DialogTitle className="text-2xl font-Raymond Suiting Fabricold">
                 {product.name}
               </DialogTitle>
             </DialogHeader>

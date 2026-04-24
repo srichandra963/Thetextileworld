@@ -586,12 +586,29 @@ export function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-primary-foreground/20">
-        <div className="container mx-auto px-4 py-4">
-          <p className="text-center text-primary-foreground/70 text-sm">
-            © 2026 THE TEXTILE WORLD. All rights reserved.
-          </p>
-        </div>
-      </div>
+  <div className="container mx-auto px-4 py-4">
+    <p className="text-center text-primary-foreground/70 text-sm flex items-center justify-center gap-2 flex-wrap">
+      © 2026 THE TEXTILE WORLD. All rights reserved.
+
+      <span className="flex items-center gap-2">
+        | Developed by
+        <a
+          href="https://www.staffarc.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 hover:text-accent transition-colors"
+        >
+          <img
+            src="/staffarc-logo.png" // 👈 put your logo in public folder
+            alt="StaffArc Logo"
+            className="h-4 w-auto object-contain"
+          />
+          <span>StaffArc</span>
+        </a>
+      </span>
+    </p>
+  </div>
+</div>
     </footer>
   );
 }

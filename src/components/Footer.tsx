@@ -599,7 +599,7 @@ export function Footer() {
           className="flex items-center gap-1 hover:text-accent transition-colors"
         >
           <img
-            src="/staffarc-logo.png" // 👈 put your logo in public folder
+            src="/Staffarc-logo.png" // 👈 put your logo in public folder
             alt="StaffArc Logo"
             className="h-4 w-auto object-contain"
           />
